@@ -1,6 +1,6 @@
-# Fastapi-CRUD  ###⚙️
+# Fastapi-CRUD
 
-A Create, Read, Update and Delete (CRUD) application using FastAPI and MongoDB to store Student data (name, division, registration number, FA name.)✨
+A Create, Read, Update and Delete (CRUD) application using FastAPI and MongoDB to store Student data (name, division, registration number, FA name.)⚙️
 
 Install the dependencies and run using Python and Uvicorn.
 
