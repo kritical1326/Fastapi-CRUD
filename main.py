@@ -21,7 +21,7 @@ collection_name= dbname["student"]
 app = FastAPI()
 
 starttime = time.time()
-
+ 
 class Student(BaseModel):
     name: str
     registration_number: str
@@ -30,7 +30,6 @@ class Student(BaseModel):
 
 class StudentDelete(BaseModel):
     name: str
-
 
 @app.get("/")
 def healthCheck():
