@@ -69,4 +69,3 @@ async def deleteInformation(info : StudentDelete):
         "status" : "SUCCESS",
         "data" : info
     }
-
