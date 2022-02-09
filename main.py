@@ -54,6 +54,9 @@ async def create_item(info : Student):
     
 @app.put("/student")
 async def updateInformation(info : Student):
+    collection_name.update_one(
+    {"name": info.name},
+    {"$set": {"fa_name": info.fa_name, "division": info.division, "registration_number": info.registration_number}})
     return {
         "status" : "SUCCESS",
         "data" : info
@@ -61,6 +64,7 @@ async def updateInformation(info : Student):
 
 @app.delete("/student")
 async def deleteInformation(info : StudentDelete):
+    collection_name.delete_one({"name": info.name})
     return {
         "status" : "SUCCESS",
         "data" : info
