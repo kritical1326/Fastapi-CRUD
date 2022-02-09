@@ -1,0 +1,6 @@
+pip install fastapi
+pip install "uvicorn[standard]"
+pip install dnspython
+pip install pydantic
+pip install pymongo
+pip install python-decouple
